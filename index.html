@@ -9,73 +9,128 @@
     <style>
         .handwritten { font-family: 'Patrick Hand', cursive; }
         .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+        .map-btn { transition: all 0.2s; }
+        .map-btn:active { transform: scale(0.95); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-['Inter'] pb-20">
 
-    <header class="bg-blue-600 text-white py-10 px-6 text-center shadow-lg">
-        <h1 class="text-4xl font-black handwritten mb-2">Mabuhay! 🇵🇭</h1>
-        <p class="text-blue-100 uppercase tracking-widest text-xs font-bold font-sans">Explorer: Eoin O'Hagan</p>
+    <header class="bg-blue-600 text-white py-12 px-6 text-center shadow-lg">
+        <h1 class="text-4xl font-black handwritten mb-2">Mabuhay from the PH! 🇵🇭</h1>
+        <p class="text-blue-100 uppercase tracking-[0.2em] text-[10px] font-black">Travel Journal: Eoin O'Hagan</p>
     </header>
 
-    <main class="max-w-md mx-auto px-4 -mt-8 space-y-10">
+    <main class="max-w-md mx-auto px-4 -mt-8 space-y-8">
 
-        <section class="bg-white rounded-3xl overflow-hidden card-shadow border border-slate-100">
-            <div class="h-48 bg-slate-200 flex items-center justify-center relative">
-                <img src="https://via.placeholder.com/600x400?text=Rice+Farm+Photo" class="object-cover w-full h-full" alt="Rice Farm">
-                <span class="absolute top-4 left-4 bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Mar 31</span>
+        <section class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
+            <div class="bg-slate-900 p-2 text-center text-[9px] font-black tracking-widest text-slate-400 uppercase">
+                Weather: Daet vs. Pakenham
             </div>
-            <div class="p-6">
-                <h2 class="text-2xl font-black text-slate-900 mb-1">San Manuel Rice Farm</h2>
-                <p class="text-blue-600 text-xs font-bold mb-4 uppercase tracking-tighter">📍 Tarlac / Pangasinan area</p>
-                <p class="text-slate-600 text-sm leading-relaxed mb-6">We stayed right on a working farm. It was amazing to see how much work goes into growing the rice we eat at home!</p>
-                
-                <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-xl">
-                    <p class="text-xs font-black text-green-800 uppercase mb-1">💡 Fun Fact for the Class:</p>
-                    <p class="text-sm text-green-900">Most rice in the Philippines is still planted by hand! Farmers stand in water to push the seedlings into the mud.</p>
+            <div class="flex divide-x divide-slate-100">
+                <div class="flex-1 p-4 text-center bg-orange-50/30">
+                    <p class="text-[10px] font-bold text-orange-600 uppercase">Daet</p>
+                    <div class="text-3xl my-1">☀️</div>
+                    <p class="text-2xl font-black text-slate-800">32°C</p>
+                </div>
+                <div class="flex-1 p-4 text-center bg-blue-50/30">
+                    <p class="text-[10px] font-bold text-blue-600 uppercase">Pakenham</p>
+                    <div class="text-3xl my-1">☁️</div>
+                    <p class="text-2xl font-black text-slate-800">14°C</p>
                 </div>
             </div>
         </section>
 
         <section class="bg-white rounded-3xl overflow-hidden card-shadow border border-slate-100">
-            <div class="h-48 bg-slate-200 flex items-center justify-center relative">
-                <img src="https://via.placeholder.com/600x400?text=Taal+Volcano+Photo" class="object-cover w-full h-full" alt="Talisay">
-                <span class="absolute top-4 left-4 bg-blue-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Apr 8</span>
+            <div class="h-40 bg-slate-200 relative">
+                <img src="https://via.placeholder.com/600x400?text=Manila+Skyline" class="object-cover w-full h-full">
+                <span class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Mar 26</span>
             </div>
-            <div class="p-6">
-                <h2 class="text-2xl font-black text-slate-900 mb-1">Talisay & Taal Volcano</h2>
-                <p class="text-blue-600 text-xs font-bold mb-4 uppercase tracking-tighter">📍 Club Balai Isabel</p>
-                <p class="text-slate-600 text-sm leading-relaxed mb-6">The resort was right on the water. We could see the Taal Volcano, which is a volcano inside a lake!</p>
-                
-                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-xl">
-                    <p class="text-xs font-black text-blue-800 uppercase mb-1">💡 Fun Fact for the Class:</p>
-                    <p class="text-sm text-blue-900">Taal is one of the smallest active volcanoes in the world, and it has its own crater lake inside it!</p>
+            <div class="p-6 text-center">
+                <h2 class="text-xl font-black text-slate-900 mb-1">Manila Arrival</h2>
+                <a href="https://www.google.com/maps/search/Manila+Philippines" target="_blank" class="text-blue-500 text-[10px] font-bold uppercase tracking-tighter block mb-4 italic">See on Map 📍</a>
+                <p class="text-slate-600 text-sm mb-4">Landed in the capital! It's busy, warm, and the start of our big adventure.</p>
+                <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                    <p class="text-[10px] font-black text-slate-400 uppercase mb-1">💡 Fun Fact:</p>
+                    <p class="text-xs text-slate-700 font-medium">Manila is the most densely populated city in the world!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-3xl overflow-hidden card-shadow border border-slate-100">
+            <div class="h-40 bg-slate-200 relative">
+                <img src="https://via.placeholder.com/600x400?text=San+Manuel+Rice+Farm" class="object-cover w-full h-full">
+                <span class="absolute top-4 left-4 bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Mar 31</span>
+            </div>
+            <div class="p-6 text-center">
+                <h2 class="text-xl font-black text-slate-900 mb-1">San Manuel Rice Farm</h2>
+                <a href="https://www.google.com/maps/search/San+Manuel+Pangasinan" target="_blank" class="text-blue-500 text-[10px] font-bold uppercase tracking-tighter block mb-4 italic">See on Map 📍</a>
+                <p class="text-slate-600 text-sm mb-4">Stayed on a real farm! I saw how rice grows in the mud before it gets to our plates.</p>
+                <div class="bg-green-50 p-3 rounded-xl border border-green-100">
+                    <p class="text-[10px] font-black text-green-600 uppercase mb-1">💡 Fun Fact:</p>
+                    <p class="text-xs text-green-800 font-medium">Carabao (water buffalo) are often used to help plow the rice fields!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-3xl overflow-hidden card-shadow border border-slate-100">
+            <div class="h-40 bg-slate-200 relative">
+                <img src="https://via.placeholder.com/600x400?text=Taal+Volcano" class="object-cover w-full h-full">
+                <span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Apr 8</span>
+            </div>
+            <div class="p-6 text-center">
+                <h2 class="text-xl font-black text-slate-900 mb-1">Talisay & Volcanoes</h2>
+                <a href="https://www.google.com/maps/search/Talisay+Batangas" target="_blank" class="text-blue-500 text-[10px] font-bold uppercase tracking-tighter block mb-4 italic">See on Map 📍</a>
+                <p class="text-slate-600 text-sm mb-4">Stayed at Club Balai Isabel right next to the famous Taal Volcano.</p>
+                <div class="bg-red-50 p-3 rounded-xl border border-red-100 text-left">
+                    <p class="text-[10px] font-black text-red-600 uppercase mb-1">💡 Fun Fact:</p>
+                    <p class="text-xs text-red-800 font-medium text-center">Taal is a volcano inside a lake, on an island, inside another lake!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-3xl overflow-hidden card-shadow border border-slate-100">
+            <div class="h-40 bg-slate-200 relative">
+                <img src="https://via.placeholder.com/600x400?text=Lobo+Batangas" class="object-cover w-full h-full">
+                <span class="absolute top-4 left-4 bg-teal-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Apr 9</span>
+            </div>
+            <div class="p-6 text-center">
+                <h2 class="text-xl font-black text-slate-900 mb-1">Lobo, Batangas</h2>
+                <a href="https://www.google.com/maps/search/Lobo+Batangas" target="_blank" class="text-blue-500 text-[10px] font-bold uppercase tracking-tighter block mb-4 italic">See on Map 📍</a>
+                <p class="text-slate-600 text-sm mb-4">Exploring the rocky beaches and clear blue ocean water.</p>
+                <div class="bg-teal-50 p-3 rounded-xl border border-teal-100">
+                    <p class="text-[10px] font-black text-teal-600 uppercase mb-1">💡 Fun Fact:</p>
+                    <p class="text-xs text-teal-800 font-medium">Lobo is known as the "Atis Capital" because they grow so many sugar apples!</p>
                 </div>
             </div>
         </section>
 
         <section class="bg-white rounded-3xl overflow-hidden card-shadow border-2 border-orange-400">
-            <div class="h-48 bg-slate-200 flex items-center justify-center relative">
-                <img src="https://via.placeholder.com/600x400?text=Daet+Surfing+Photo" class="object-cover w-full h-full" alt="Daet">
-                <span class="absolute top-4 left-4 bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase animate-pulse">Current Stop</span>
+            <div class="h-48 bg-slate-200 relative">
+                <img src="https://via.placeholder.com/600x400?text=Daet+Surfing" class="object-cover w-full h-full">
+                <span class="absolute top-4 left-4 bg-orange-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase animate-pulse">Current Stop</span>
             </div>
-            <div class="p-6">
+            <div class="p-6 text-center">
                 <h2 class="text-2xl font-black text-slate-900 mb-1">Daet, Bicol</h2>
-                <p class="text-blue-600 text-xs font-bold mb-4 uppercase tracking-tighter">📍 Camarines Norte</p>
-                <p class="text-slate-600 text-sm leading-relaxed mb-6">We are here now! The waves are big because Daet is famous for surfing. We are also trying very spicy food.</p>
-                
-                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r-xl">
-                    <p class="text-xs font-black text-orange-800 uppercase mb-1">💡 Fun Fact for the Class:</p>
-                    <p class="text-sm text-orange-900">Bicol is famous for "Bicol Express," a dish made with lots of chili and coconut milk. It's named after a train!</p>
+                <a href="https://www.google.com/maps/search/Daet+Camarines+Norte" target="_blank" class="text-blue-500 text-[10px] font-bold uppercase tracking-tighter block mb-4 italic">See on Map 📍</a>
+                <p class="text-slate-600 text-sm mb-6">We are here now! It's famous for surfing and really spicy food.</p>
+                <div class="bg-orange-50 p-4 rounded-xl border border-orange-100">
+                    <p class="text-[10px] font-black text-orange-600 uppercase mb-1">💡 Fun Fact:</p>
+                    <p class="text-xs text-orange-900 font-bold">Bicol Express is a famous local meal made with chilies and coconut milk!</p>
                 </div>
             </div>
         </section>
 
+        <section class="bg-blue-600 rounded-3xl p-6 text-white shadow-xl rotate-1">
+            <h3 class="font-black handwritten text-xl mb-2 text-center">Note to Classmates 🇦🇺</h3>
+            <p class="text-xs leading-relaxed text-center opacity-90">
+                I'm having a great time exploring all these islands! Click the links to see where I am. See you soon!
+            </p>
+        </section>
+
     </main>
 
-    <footer class="text-center mt-12 text-slate-400 text-[10px] uppercase font-bold px-10 leading-loose">
-        Updated from a phone in the Philippines 🇵🇭<br>
-        2026 Exploration Journal
+    <footer class="text-center mt-12 text-slate-400 text-[9px] uppercase font-bold px-10 leading-loose tracking-[0.2em]">
+        Updated from a phone in Bicol // 2026
     </footer>
 
 </body>
