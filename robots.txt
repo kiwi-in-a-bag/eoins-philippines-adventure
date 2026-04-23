@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /
+
+# Specifically blocking common AI crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
